@@ -1,0 +1,63 @@
+- Review the advnace programming tools
+    - array
+        - is a collection of elements of the same type stored in memory locations 
+        - array literal []
+            - the size of the array is fixed upon creation
+            - syntax:
+                type arrayName[arraySize]:
+
+                - declaration without initialization
+                    - it allocates the memory but does not set initial values.
+
+                    ex. in numbers[5];
+                - declaratoin with initialization
+                    - sets the values of the array of the elements.
+
+                    ex. int numbers[5] = {1,2, 3, 4, 5}
+
+        - Accesssing elements
+            - array elements are access using an index with indices starting at zer0 (0) 
+            - syntax:
+                name [index]
+
+                ex. int numbers[5] = {1,2, 3, 4, 5}
+                //access the elements
+                int firstNumber = numbers[0]
+
+    - Modifying elements
+        - it allows us to change the vaue of an array elements by assigning a new value to a specific index
+        - syntax:
+            name[index]
+
+            int numbers[5] = {1, 2, 3, 4, 5};
+            numbers [1] = 25;
+
+            int numbers[5] = {1, 24, 54, 44, 6};
+
+    - Iterating through an array
+        - common operation on each element such as summing them or printing 
+
+            for(int i=0; <=5; i++){
+                std::cout<< numbers[i] << " ";
+            } 
+
+    Finding the length of the array 
+        - it determines the size of statically allocated array using sizeof operator
+
+            int size = sizeof(numbers);
+            cout << "The size of the array is: " << size;
+
+     - Multidimensional Array 
+        - arrays to have more than one dimension
+
+        int matrix [3][4] = {
+            {1, 2, 3, 4, },
+            {5, 6, 7, 8, },
+            {9, 10, 11, 12}
+        }
+
+        - access the 2D
+            int calue = matrix[1][2]
+
+    - pointers
+        -

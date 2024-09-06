@@ -29,7 +29,7 @@ int findSum(const int arr[], int size){
     return sum;
 }
 
-int MaxMin(const int arr[], int size){
+void MaxMin(const int arr[], int size){
     int max = INT_MIN;
     int min = INT_MAX;
     for(int i = 0; i < size; i++){
@@ -53,7 +53,7 @@ int main(){
     int numbers[size];
 
     //get the elements of array from user
-    cout << "Enter"<< size << " elements of array : ";
+    cout << "Enter " << size << " elements of array : ";
     for (size_t i = 0; i < size; i++)
     {
         cin >> numbers[i];

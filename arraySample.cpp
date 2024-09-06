@@ -67,6 +67,9 @@ int main(){
     int sum = findSum(numbers, size);
     cout << "Sum of the array elements: " << sum << endl;
 
+    //MaxMin
+    MaxMin(numbers, size);
+
     return 0;
 }
 
